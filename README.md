@@ -1,7 +1,3 @@
-Based on the repository structure and code composition (PHP, CSS, JavaScript), here is a comprehensive, professional README.md file tailored for the ParkSmart1 project.
-
-You can copy this directly into your repository.
-
 ParkSmart1 🚗🅿️
 Innovative Parking Management Solution
 
