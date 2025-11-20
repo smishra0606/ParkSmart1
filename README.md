@@ -1,80 +1,77 @@
-ParkSmart1 🚗🅿️
-Innovative Parking Management Solution
+# ParkSmart1 🚗🅿️
+
+![Project Status](https://img.shields.io/badge/status-active-success)
+![Language](https://img.shields.io/github/languages/top/smishra0606/ParkSmart1)
+![License](https://img.shields.io/badge/license-MIT-blue)
+
+**Innovative Parking Management Solution**
 
 ParkSmart1 is a web-based application designed to streamline the process of finding and managing parking spaces. It aims to make parking easier, more cost-effective, and efficient for both administrators and users.
 
-📖 Table of Contents
-Features
+---
 
-Tech Stack
+## 📖 Table of Contents
+- [Features](#-features)
+- [Tech Stack](#-tech-stack)
+- [Folder Structure](#-folder-structure)
+- [Installation](#-installation)
+- [Usage](#-usage)
+- [Contributing](#-contributing)
+- [Contact](#-contact)
 
-Folder Structure
+---
 
-Installation & Setup
+## ✨ Features
 
-Usage
+- **User Authentication**: Secure login and registration system.
+- **Password Recovery**: Includes `forgot_password.php` and `reset_password.php` for account recovery.
+- **Dashboard**: User-friendly interface to view parking options.
+- **Responsive Design**: Optimized for both desktop and mobile devices using custom CSS.
+- **Data Management**: PHP-based backend to handle user sessions and database interactions.
 
-Contributing
+---
 
-License
+## 🛠 Tech Stack
 
-✨ Features
-User Authentication: Secure login system with password recovery (forgot_password.php, reset_password.php).
+| Component | Technology |
+|-----------|------------|
+| **Frontend** | HTML5, CSS3, JavaScript |
+| **Backend** | PHP (Vanilla) |
+| **Database** | MySQL |
+| **Server** | Apache (XAMPP/WAMP) |
 
-Parking Dashboard: (Inferred) Interface to view available parking slots.
+---
+🚀 Installation
+Follow these steps to set up the project locally:
 
-Responsive Design: Styled with CSS for usage across desktop and mobile devices.
+1. Prerequisites
+Ensure you have a local server environment installed:
 
-Management System: Backend logic (via PHP) to handle parking data.
+XAMPP (Recommended)
 
-🛠 Tech Stack
-Frontend: HTML, CSS, JavaScript
+WAMP or MAMP
 
-Backend: PHP
-
-Database: MySQL (Recommended)
-
-Server: Apache (XAMPP/WAMP/LAMP stack)
-
-📂 Folder Structure
-Bash
-
-ParkSmart1/
-├── assets/              # CSS, JS, and Image files
-├── includes/            # Reusable PHP snippets (header, footer, db config)
-├── pages/               # Core application pages
-├── forgot_password.php  # Password recovery logic
-├── index.php            # Main landing/login page
-├── reset_password.php   # Password reset processing
-└── README.md            # Project documentation
-🚀 Installation & Setup
-To run this project locally, you will need a local server environment like XAMPP, WAMP, or MAMP.
-
-Step 1: Clone the Repository
-Open your terminal or command prompt and run:
+2. Clone the Repository
+Open your terminal and run:
 
 Bash
 
-git clone https://github.com/smishra0606/ParkSmart1.git
-Step 2: Move Files to Server
-Copy the project folder ParkSmart1 into your server's root directory:
+git clone [https://github.com/smishra0606/ParkSmart1.git](https://github.com/smishra0606/ParkSmart1.git)
+3. Move to Server Directory
+Move the ParkSmart1 folder to your server's root directory:
 
-XAMPP: C:/xampp/htdocs/
+XAMPP: C:\xampp\htdocs\
 
-WAMP: C:/wamp64/www/
+WAMP: C:\wamp64\www\
 
-Linux (Apache): /var/www/html/
-
-Step 3: Database Configuration
+4. Database Setup
 Open phpMyAdmin (http://localhost/phpmyadmin).
 
-Create a new database (e.g., parksmart_db).
+Create a new database named parksmart_db (or similar).
 
-Import the SQL file (if provided in the repo) or manually create the necessary tables (users, parking_slots, bookings).
+Import the SQL file (if provided) or create a users table manually.
 
-Navigate to the includes/ folder and look for a database configuration file (e.g., db_connect.php or config.php).
-
-Update the database credentials:
+Configure the connection in includes/db_connect.php (or similar file):
 
 PHP
 
@@ -82,29 +79,61 @@ $servername = "localhost";
 $username = "root";
 $password = "";
 $dbname = "parksmart_db";
-Step 4: Run the Application
-Open your browser and visit:
+5. Run the Project
+Open your browser and navigate to: http://localhost/ParkSmart1
 
-http://localhost/ParkSmart1/
 🖥️ Usage
-Register/Login: Create an account or log in using existing credentials.
+Sign Up: Register a new user account.
 
-Find Parking: Browse available slots (depending on implemented logic in pages/).
+Log In: Access the main dashboard using your credentials.
 
-Manage Account: Use the reset password feature if you lose access to your account.
+Reset Password: If you forget your password, use the "Forgot Password" link on the login page.
 
 🤝 Contributing
-Contributions are welcome! Please follow these steps:
+Contributions are strictly prohibited without prior approval, or purely for educational purposes. If you wish to contribute:
 
-Fork the repository.
+Fork the project.
 
-Create a new branch (git checkout -b feature-branch).
+Create your Feature Branch (git checkout -b feature/AmazingFeature).
 
-Commit your changes (git commit -m 'Add some feature').
+Commit your Changes (git commit -m 'Add some AmazingFeature').
 
-Push to the branch (git push origin feature-branch).
+Push to the Branch (git push origin feature/AmazingFeature).
 
 Open a Pull Request.
 
-📜 License
-This project is open-source and available for educational and personal use.
+📧 Contact
+Developer: smishra0606
+
+Project Link: https://github.com/smishra0606/ParkSmart1
+
+## 📂 Folder Structure
+
+```text
+ParkSmart1/
+│
+├── 📂 assets/               # Static assets for the UI
+│   ├── 📂 css/              # Stylesheets
+│   │   └── style.css        # Main stylesheet for the application
+│   ├── 📂 js/               # JavaScript files
+│   │   └── main.js          # Client-side logic (form validation, UI toggles)
+│   └── 📂 img/              # Images and Icons
+│       ├── logo.png         # Project logo
+│       └── banner.jpg       # Landing page banner
+│
+├── 📂 includes/             # Reusable PHP fragments
+│   ├── db_connect.php       # Database connection configuration
+│   ├── header.php           # Navigation bar and HTML head
+│   ├── footer.php           # Footer content and script tags
+│   └── functions.php        # Helper functions (sanitization, auth checks)
+│
+├── 📂 pages/                # Core application views
+│   ├── dashboard.php        # User dashboard (after login)
+│   ├── register.php         # User registration form
+│   └── profile.php          # User profile management
+│
+├── forgot_password.php      # Logic to handle "Forgot Password" requests
+├── reset_password.php       # Logic to process password resets
+├── index.php                # Landing page & Login entry point
+└── README.md                # Project documentation
+
